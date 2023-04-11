@@ -1,0 +1,48 @@
+<div id="<%= dom_id project %>">
+  <p>
+    <strong class="desc">Name:</strong>
+    <%= project.name %>
+  </p>
+
+  <p>
+    <strong class="desc">Description:</strong>
+    <%= project.description %>
+  </p>
+</div>
+
+<style>
+body{
+ width: 250px;
+ margin: auto;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  background-size: cover;
+  color: #fff;
+}
+  .form-inputs{
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid #fff;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  input , textarea{
+    margin-top: 10px;
+    width: 90%;
+    height: 25px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+  textarea{
+    height: 60px;
+  }
+  button{
+    width: 50%;
+  }
+</style>

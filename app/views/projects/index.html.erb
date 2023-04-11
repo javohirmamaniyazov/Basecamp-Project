@@ -1,0 +1,49 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Projects</h1>
+
+<div id="projects">
+  <% @projects.each do |project| %>
+    <%= render project %>
+    <p class="show">
+      <%= link_to "Show this project", project %>
+    </p>
+  <% end %>
+</div>
+
+  <%= button_to(link_to "New project", new_project_path) %>
+
+
+
+<style>
+  body{
+    background-color: #3498DB;
+  }
+
+  #projects{
+     background-color: #ECF0F1;
+     color:#000;
+  }
+
+  .show{
+    background-color: #3498DB;
+    width:96%;
+    height:25px;
+    color: #000;
+    padding:5px;
+    border:0px outset #000;
+    padding-top: 13px;
+    margin-bottom: 0;
+  }
+
+  a{
+    text-decoration: none;
+    color: #000;
+    margin: auto;
+  }
+
+  button{
+    border-radius: 6px;
+    padding: 5px;
+  }
+</style>

@@ -1,0 +1,56 @@
+
+
+body{
+  width: 250px;
+  margin: auto;
+   background: rgb(2,0,36);
+   background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+   color: #fff;
+   text-align: center;
+  margin-top: 10px;
+ }
+   .form-inputs{
+     margin-top: 15px;
+     padding: 10px;
+     text-align: center;
+     justify-content: center;
+     border: 2px solid #fff;
+   }
+
+   a{
+     color: #fff;
+     text-decoration: none;
+   }
+
+   input , textarea , .methods{
+      margin-top: 15px;
+     width: 90%;
+     height: 25px;
+     padding-left: 10px;
+     border: none;
+   }
+   textarea{
+     height: 60px;
+   }
+   button{
+      margin-top: 15px;
+     width: 50%;
+   }
+
+   .field{
+    margin: 10px;
+   }
+
+
+   .new_user{
+    border: 1px solid #fff;
+    padding: 5px;
+    height: auto;
+   }
+
+   button{
+    margin-top: 15px;
+    width: 40%;
+    border-radius: 6px;
+    padding: 5px;
+  }

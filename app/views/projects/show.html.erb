@@ -1,0 +1,54 @@
+<p style="color:#35FD00 "><%= notice %></p>
+
+<div class="form-inputs">
+  <%= render @project %>
+</div>
+
+<div class="methods">
+  <%= link_to "Edit", edit_project_path(@project) %> |
+  <%= link_to "Back", projects_path %>
+
+  <br/>
+  <%= button_to "Delete", @project, method: :delete %>
+</div>
+
+<style>
+body{
+ width: 250px;
+ margin: auto;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  color: #fff;
+}
+  .form-inputs{
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid #fff;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  input , textarea ,{
+     margin-top: 15px;
+    width: 90%;
+    height: 25px;
+    padding-left: 10px;
+    border: none;
+  }
+  textarea{
+    height: 60px;
+  }
+
+  button{
+    margin-top: 15px;
+    width: 40%;
+    border-radius: 6px;
+    padding: 5px;
+  }
+
+</style>
